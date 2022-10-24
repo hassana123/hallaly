@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./styles/errorPage.css";
 const NoMatch = () => {
   return (
     <div>

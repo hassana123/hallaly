@@ -5,10 +5,10 @@ const Navigation = () => {
   const [navBurger, setNavBurger] = useState(false);
   return (
     <div>
-      <button onClick={() => setNavBurger(!navBurger)} class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+      <button onClick={() => setNavBurger(!navBurger)} className="hamburger">
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
       </button>
       <div className="nav-container">
         <nav className={navBurger ? "menuNav" : "mainNav"}>

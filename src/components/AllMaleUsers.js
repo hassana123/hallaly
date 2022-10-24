@@ -7,7 +7,7 @@ const AllMaleUsers = () => {
   useEffect(() => {
     const fetchMaleRandomUser = async () => {
       setloading(true);
-      const response = await fetch("https://randomuser.me/api/?results=500");
+      const response = await fetch("https://randomuser.me/api/?results=50");
       const { results } = await response.json();
       setMaleUsers(results);
       setloading(false);

@@ -1,6 +1,6 @@
 .nav-container{
     position: relative;
-    height: 7vh;
+    height: 6.5vh;
     background-color: black;
 }
 
@@ -22,11 +22,13 @@
     padding:5px  50px;
 }
 .menuNav{
+    z-index: 4;
     background: rgba(27, 203, 216, 0.3);
     backdrop-filter: saturate(180%) blur(10px);
     height: 40vh;
     padding:5px 10px;
     color: snow;
+
     /* position: absolute; */
    
 }
@@ -155,7 +157,7 @@ a{
     }
     .nav-container {
        
-        height: 6.5vh;
+        height: 6vh;
         
     }
 }

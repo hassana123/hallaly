@@ -1,5 +1,5 @@
 .user-profile-container{
-    margin-top: 100px;
+    margin-top: 10px;
     padding: 35px 0px;
     background-color: #036176;
     border: 2px solid #D2cec4;
@@ -8,6 +8,7 @@
     
 }
 .usersNav{
+    top: 30%;
     position: relative;
    background-color:rgba(9, 232, 248, 0.3);
 }
@@ -76,7 +77,33 @@
     .usersNav ul li a {
         padding: 5px 5px;
         display: block;
-        margin: 20px;
+        margin: 10px 30px;
     }
     
+}
+.pagination-container{
+    background-color: #8ec8c2;
+    width: 100%;
+   
+}
+.pagination-container .pagination{
+    background-color: transparent;
+    width: 90%;
+    margin: auto;
+    
+}
+.pagination ul li{
+    display: inline-block;
+    padding: 20px 20px;
+   
+    
+}
+.pagination ul{
+    width: 90%;
+    margin: auto;
+}
+.pagination ul li a{
+    background-color:#f7b941;
+    padding: 8px 13px;
+    border-radius: 5px;
 }
