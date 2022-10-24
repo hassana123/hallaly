@@ -1,0 +1,17 @@
+.about-us-container{
+    background-color:  rgba(27, 203, 216, 0.3);
+    padding:50px;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+    color: snow;
+}
+.about-us-container h1{
+    color: #f7b941;
+    margin: 20px 0px;
+}
+.about-us-container h2{
+    color: #f7b941;
+    margin: 20px 0px;
+}

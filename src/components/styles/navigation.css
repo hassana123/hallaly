@@ -1,0 +1,171 @@
+.nav-container{
+    position: relative;
+    height: 6.5vh;
+    background-color: black;
+}
+
+.mainNav{
+    background: rgba(27, 203, 216, 0.3);
+    backdrop-filter: saturate(180%) blur(10px);
+    display: grid;
+    color: snow;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+    padding: 5px 35px;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+}
+
+.mainNav ul li {
+    display: inline-block;
+    list-style: none;
+    padding:5px  50px;
+}
+.menuNav{
+    z-index: 4;
+    background: rgba(27, 203, 216, 0.3);
+    backdrop-filter: saturate(180%) blur(10px);
+    height: 40vh;
+    padding:5px 10px;
+    color: snow;
+
+    /* position: absolute; */
+   
+}
+.menuNav ul li{
+   list-style: none;
+   text-align: center;
+   margin: 20px;display: none;
+}
+.menuNav .signIn {
+    border: 2px solid #f7b941;
+    padding: 5px;
+    border-radius: 20px;
+}
+.menuNav .signUp {
+    background: transparent;
+    padding: 5px;
+    border-radius: 20px;
+}
+.menuNav .signUp:hover {
+    border: 2px solid #f7b941;
+    background: #f7b941;
+    color: snow !important;
+}
+
+.menuNav .signIn:hover {
+    background: #f7b941;
+}
+.mainNav .middle ul li a{
+    text-decoration: none;
+        color: snow;
+}
+
+.mainNav .signIn {
+    border: 2px solid  #f7b941;
+    padding: 5px 15px;
+    margin-left: 85px;
+    border-radius: 20px;
+}
+.mainNav .middle  ul li a:hover{
+    color: #f7b941;
+} 
+.mainNav .signUp {
+    background: transparent;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+.mainNav .signUp:hover{
+    border: 2px solid #f7b941;
+    background: #f7b941;
+    color: snow !important;
+}
+.mainNav .signIn:hover {
+    background: #f7b941;
+}
+.hamburger {
+    display: none;
+    background-color: #f7b941;
+    border: 2px solid #f7b941;
+    padding: 3px;
+    border-radius: 5px;
+    position: absolute;
+    top: 1%;
+    font-weight: bolder;
+    z-index: 2;
+    left: 85%;
+}
+.bar {
+    width: 30px;
+    height: 3px;
+    display: block;
+    margin: 3px 0;
+    background-color: snow;
+
+}
+
+a{
+    text-decoration: none;
+    color: snow;
+}
+.activate{
+    color: #f7b941 !important;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+@media (max-width:1095px) {
+    .mainNav ul li {
+       
+        padding: 5px 30px;
+    }
+    .mainNav .signIn {
+        padding: 5px 10px;
+        margin-left: 45px;
+    }
+    .mainNav .signUp {
+        padding: 5px 10px;
+    }
+}
+@media (max-width:855px) {
+    .mainNav ul li {
+
+        padding: 5px 10px;
+    }
+
+    .mainNav .signIn {
+        padding: 5px 5px;
+        margin-left: 15px;
+    }
+
+    .mainNav .signUp {
+        padding: 5px 5px;
+    }
+
+
+
+
+@media (max-width:655px) {
+    .hamburger{
+        display: block;
+    }
+    .mainNav ul li{
+        display: none;
+    }
+    .menuNav ul li{
+        display: block;
+    }
+    .nav-container {
+       
+        height: 6vh;
+        
+    }
+}
+
+
+
+
+
+
+
+}
