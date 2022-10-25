@@ -9,7 +9,7 @@ const AllUsers = () => {
   const [users, setUsers] = useState([]);
   const [currentUsers, setCurrentUsers] = useState(1);
   const [userPerPage] = useState(12);
-  const [disabled, setDisabled] = useState(false);
+  // const [disabled, setDisabled] = useState(false);
   useEffect(() => {
     const fetchRandomUser = async () => {
       setloading(true);
@@ -33,23 +33,16 @@ const AllUsers = () => {
   function handleNext(e) {
     e.preventDefault();
     if (currentUsers < Math.ceil(users.length / userPerPage)) {
-      setDisabled(false);
       setCurrentUsers((next) => next + 1);
-    } else {
-      setDisabled(true);
     }
   }
   function handlePrev(e) {
     e.preventDefault();
     if (currentUsers > 0) {
-      setDisabled(false);
       setCurrentUsers((prev) => prev - 1);
-    } else {
-      setDisabled(true);
     }
   }
 
-  console.log(disabled);
   return (
     <div>
       {loading ? (
@@ -74,7 +67,7 @@ const AllUsers = () => {
           </button>
           <button
             className="btn-pagination"
-            disabled={disabled}
+            disabled={currentUsers >= Math.ceil(users.length / userPerPage)}
             onClick={handleNext}
           >
             Next

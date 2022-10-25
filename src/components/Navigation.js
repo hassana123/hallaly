@@ -19,6 +19,9 @@ const Navigation = () => {
             <ul>
               <li>
                 <NavLink
+                  onClick={(e) =>
+                    e.target.addEventListener("click") ? !navBurger : navBurger
+                  }
                   className={({ isActive }) => (isActive ? "activate" : "")}
                   to="/"
                   end
@@ -28,6 +31,9 @@ const Navigation = () => {
               </li>
               <li>
                 <NavLink
+                  onClick={(e) =>
+                    e.target.addEventListener("click") ? !navBurger : navBurger
+                  }
                   className={({ isActive }) => (isActive ? "activate" : "")}
                   to="/users"
                 >
@@ -36,6 +42,9 @@ const Navigation = () => {
               </li>
               <li>
                 <NavLink
+                  onClick={(e) =>
+                    e.target.addEventListener("click") ? !navBurger : navBurger
+                  }
                   className={({ isActive }) => (isActive ? "activate" : "")}
                   to="/about"
                 >
