@@ -1,4 +1,5 @@
 import React from "react";
+import load from "./images/loading.jpg";
 import { useState, useEffect } from "react";
 
 const AllMaleUsers = () => {
@@ -19,7 +20,10 @@ const AllMaleUsers = () => {
   return (
     <div>
       {loading ? (
-        "Loading........."
+        <div className="loading">
+          <img src={load} alt="loading" />
+          <p>Efile eje ko COOK</p>
+        </div>
       ) : (
         <div className="grid">
           {maleUsers.map((user, index) => {

@@ -1,4 +1,5 @@
 import React from "react";
+import load from "./images/loading.jpg";
 import { useState, useEffect } from "react";
 const FemaleUsers = () => {
   const [loading, setloading] = useState(false);
@@ -20,7 +21,10 @@ const FemaleUsers = () => {
   return (
     <div>
       {loading ? (
-        "Loading........."
+        <div className="loading">
+          <img src={load} alt="loading" />
+          <p>Efile eje ko COOK</p>
+        </div>
       ) : (
         <div className="grid">
           {femaleUsers.map((user, index) => {

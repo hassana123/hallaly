@@ -64,11 +64,20 @@ const AllUsers = () => {
             totalUsers={users.length}
             paginate={paginate}
           />
-          <button disabled={disabled} onClick={handleNext}>
-            Next
+
+          <button
+            className="btn-pagination"
+            disabled={currentUsers <= 1}
+            onClick={handlePrev}
+          >
+            Prev
           </button>
-          <button disabled={currentUsers <= 1} onClick={handlePrev}>
-            Previous
+          <button
+            className="btn-pagination"
+            disabled={disabled}
+            onClick={handleNext}
+          >
+            Next
           </button>
           <Profile users={currentListUsers} />
         </>
