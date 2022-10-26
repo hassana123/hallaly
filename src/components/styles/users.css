@@ -41,10 +41,7 @@
     margin-bottom: 10px;
     font-size: 18px;
 }
-.detect-error p {
-    color: #f7b941;
-    text-align: center;
-}
+
 .details{
     width: 80%;
     margin: auto;
@@ -98,19 +95,17 @@
 }
 .pagination ul li{
     display: inline-block;
-    padding: 20px 20px;
-   
-    
+    background-color: #f7b941;
+    padding: 8px 13px;
+    margin: 5px;
+    border-radius: 5px; 
+    font-weight: 800;
 }
 .pagination ul{
     width: 90%;
     margin: auto;
 }
-.pagination ul li a{
-    background-color:#f7b941;
-    padding: 8px 13px;
-    border-radius: 5px;
-}
+
 .loading{
     width:50%;
     max-width: 500px;

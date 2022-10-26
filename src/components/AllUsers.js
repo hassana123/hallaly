@@ -21,10 +21,26 @@ const AllUsers = () => {
 
     fetchRandomUser();
   }, []);
+
+  const hclick = (e) => {
+    setCurrentUsers(Number(e.target.id));
+  };
+  const pages = [];
+  for (let i = 1; i <= Math.ceil(users.length / userPerPage); i++) {
+    pages.push(i);
+  }
+
+  const renderPages = pages.map((num) => {
+    return (
+      <li key={num} id={num} onClick={hclick}>
+        {num}
+      </li>
+    );
+  });
+
   const indexOfLastUser = currentUsers * userPerPage;
   const indexOfFirstUser = indexOfLastUser - userPerPage;
   const currentListUsers = users.slice(indexOfFirstUser, indexOfLastUser);
-
   console.log(users);
   const paginate = (pageNumber) => {
     setCurrentUsers(pageNumber);
@@ -52,11 +68,27 @@ const AllUsers = () => {
         </div>
       ) : (
         <>
-          <Pagination
+          {/* <Pagination
             userPerPage={userPerPage}
             totalUsers={users.length}
             paginate={paginate}
-          />
+            />
+             */}
+          {/* {Array.from({ length: 10 }, (_, idx) => idx + 1).map((btn) => (
+            <button
+              key={btn}
+              onclick={() => {
+                paginate(btn);
+              }}
+            >
+              {btn}
+            </button>
+          ))} */}
+          <div className="pagination-container">
+            <nav className="pagination">
+              <ul className="pages">{renderPages}</ul>
+            </nav>
+          </div>
 
           <button
             className="btn-pagination"
@@ -72,6 +104,7 @@ const AllUsers = () => {
           >
             Next
           </button>
+
           <Profile users={currentListUsers} />
         </>
       )}
