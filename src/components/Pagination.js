@@ -1,10 +1,10 @@
 import React from "react";
-
+const pageNumbers = [];
 const Pagination = ({ userPerPage, totalUsers, paginate }) => {
-  const pageNumbers = [];
   for (let i = 1; i <= Math.ceil(totalUsers / userPerPage); i++) {
     pageNumbers.push(i);
   }
+
   return (
     <div className="pagination-container">
       <nav className="pagination">

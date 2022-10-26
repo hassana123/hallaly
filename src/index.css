@@ -17,3 +17,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.detect-error p{
+  color: #f7b941;
+  text-align: center;
+}
